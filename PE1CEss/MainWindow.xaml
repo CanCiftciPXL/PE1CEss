@@ -1,0 +1,18 @@
+﻿<Window x:Class="PE1CEss.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PE1CEss"
+        mc:Ignorable="d"
+        Title="Student Groepeerder" Height="500" Width="850">
+    <Grid Background="LightCyan">
+        <Label Content="Start Studentennummer" HorizontalAlignment="Left" Margin="28,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-4.486" FontSize="20"/>
+        <Label Content="Einde Studentennummer" HorizontalAlignment="Left" Margin="400,84,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="startStudentennummerTextBox" HorizontalAlignment="Left" Margin="28,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="50" TextChanged="startStudentennummerTextBox_TextChanged"/>
+        <TextBox x:Name="eindeStudentennummerTextBox" HorizontalAlignment="Left" Margin="400,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.282,0.024" Height="50" TextChanged="eindeStudentennummerTextBox_TextChanged"/>
+        <Button x:Name="groupButton" Content="Maak Groep" HorizontalAlignment="Left" Margin="640,95,0,0" VerticalAlignment="Top" Width="200" Height="50" FontSize="20" Click="groupButton_Click"/>
+        <TextBox x:Name="resultTextBox" HorizontalAlignment="Left" Margin="28,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="800" Height="250" FontFamily="Courier New"/>
+
+    </Grid>
+</Window>
