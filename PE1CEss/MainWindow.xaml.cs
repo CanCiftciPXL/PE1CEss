@@ -44,13 +44,23 @@ namespace PE1CEss
 
         private void groupButton_Click(object sender, RoutedEventArgs e)
         {
+            int groepnummer = 0;
+            int groepLaatste = 10;
+
             if (!(eindNummer > startNummer))
             {
                 MessageBox.Show("Geef twee geldige studentennummers in voor de start en eindwaarde. Geldige studentennummers zijn getallen tussen 12 miljoen en 20 miljoen. Tot slot moet de startnummer kleiner zijn dan de eindnummer.");
             }
             else
             {
-
+                for (int i = 0; i <= groepLaatste; i++)
+                {
+                    i = groepnummer;
+                    for (int j = startNummer; j < eindNummer; j++)
+                    {
+                        resultTextBox.Text = $"Klas {i}: {j}, {j}, {j}, {j},{j}, {j},{j}, {j}, {j}, {j}";
+                    }
+                }
             }
         }
     }
